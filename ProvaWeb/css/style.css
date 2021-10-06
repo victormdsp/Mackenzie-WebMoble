@@ -1,0 +1,159 @@
+/* ----------------------Variables----------------------*/
+
+:root{
+    --backMobile: #ffffff;
+    --backDesktop: #f0f0f0;
+    --buttonColor: #ef5a5a;
+}
+
+/* ----------------------Fonts----------------------*/
+
+@font-face {
+    font-family: 'mainFont';
+    src: url('../fonts/Montserrat-Medium.ttf');
+    font-weight: normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'dateFont';
+    src: url('../fonts/Montserrat-ExtraLight.ttf');
+    font-weight: normal;
+    font-style:normal;
+}
+
+/* ----------------------Reset----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'mainFont';
+}
+
+/* ----------------------Style for Mobile----------------------*/
+html{
+    background-color: var(--backMobile);
+}
+
+body{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'mainFont';
+    background-color: var(--backMobile);
+}
+
+/* ----------------------Ajustes nas tags que possuem ID----------------------*/
+
+#calendar{ /* ----------------------Id para o calendário (22 - SEP - 2021 - Wednesday)----------------------*/
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding-top: 3rem;
+}
+
+#year{ /* ----------------------Mudanças de estilo apenas no mês e ano----------------------*/
+    padding-top: 9.5px;
+    margin-right: 165px;
+    padding-left: 10px;
+}
+
+
+#day{ /* ----------------------Dia da semana (Wednesday)----------------------*/
+    padding-top: 20px;
+}
+
+#taskGroup{ /* ----------------------Div para todas as tasks----------------------*/
+    padding-top: 30px;
+}
+
+#footerButton{ /* ----------------------Botão de adicionar ao final das tasks----------------------*/
+    width: 40px;
+    height: 40px;
+    margin-left: 280px;
+    margin-top: 140px;
+
+    background-color: var(--buttonColor);
+    border: 0px;
+    border-radius: 20px;
+
+    color: var(--backMobile);
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+/* ----------------------Ajuste nas tags que possuem Classes----------------------*/
+
+.taskButton{ /* ----------------------Estilização de todos os botões das tasks----------------------*/
+    width: 25px;
+    height: 25px;
+
+    margin-left: 330px;
+
+    background-color: var(--backMobile);
+    border: 3px solid var(--backDesktop);
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+/* ----------------------Style caso o botão seja clicado ele marca o botão clicado com a cor dada----------------------*/
+.taskButton:active, .taskButton:focus{
+    background-color: #ef5a5a;
+}
+
+/* ----------------------Ajustes nos testos dos h's----------------------*/
+h1{
+    font-size: 55px;
+}
+
+h2{
+    font-family: 'dateFont';
+    font-size: 20px;
+}
+
+h3{
+    font-size: 20px; 
+    font-family: 'mainFont';
+}
+
+/* ----------------------Ajuste nas tasks----------------------*/
+li{
+    width: 500px;
+    margin-top: 45px;
+    margin-left: 6rem;
+    list-style-type: none;
+
+    font-family: 'mainFont';
+}
+
+/* ----------------------Alterações para Desktop----------------------*/
+
+@media screen and (min-width: 800px) {
+
+
+    html{ /* ----------------------Mudanças principais na página como disponibilidade dos objetos e cor do fundo----------------------*/
+        display: flex;
+        justify-content: center;
+        background-color: var(--backDesktop);
+    }
+    
+    body{ /* ----------------------Ajuste para criar uma "caixa" com as tasks dentro----------------------*/
+        background-color: #ffffff;
+        width: 500px;
+        height: 650px;
+        box-shadow: 1px 1px 10px #8b8b8b;
+        margin-top: 50px; 
+    }
+
+    li{ /* ----------------------Ajuste da margem para o desktop das tasks----------------------*/
+        margin-left: 3rem;
+    }
+    
+    #footerButton{ /* ----------------------Centralizando o botão de adicionar Task----------------------*/
+        margin-left: 240px;
+        margin-top: 215px;
+    }
+
+}
+

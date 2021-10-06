@@ -1,0 +1,104 @@
+/* Reset das propriedades base */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Ajustes no body */
+body{
+    position: absolute;
+    left: 25%;
+    justify-content: center;
+    margin-top: 250px;
+    background-color: #505050;
+}
+
+/* ------------------------------------ Estilização jogo da velha ------------------------------------ */
+#board{
+    width: 320px;
+    height: 320px;
+    background-color: #b0904d;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* Estilização dos botões das posições */
+button{
+    width: 100px;
+    height: 100px;
+    background-color:#731f00;
+    margin: 0.2rem;
+
+    font-size: 50px;
+    color: #ffffff;
+
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: #909090;
+    transition: 0.1s;
+}
+
+/* Estilização do botão de reset após o fim de jogo */
+#Reset{
+    background-color: #3d1a1a;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 310px;
+    height: 70px;
+
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+#Reset:hover{
+    background-color: #909090;
+    transition: 0.1s;
+}
+
+/* Brincando um pouco e incrementando coisas extras não inclusas na proposta da atividade */
+
+.initialButton{
+    background-color: #3d1a1a;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 165px;
+    height: 40px;
+
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+
+    margin-top: 0.5rem;
+}
+
+input{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+input::placeholder{
+    color: #505050;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+#menu{
+    width: 50px;
+    height: 25px;
+    font-size: 15px;
+    background-color: #000000;
+
+    border: 1px solid #000000;
+    border-radius: 20px;
+
+    margin-left: 16.7rem;
+}
