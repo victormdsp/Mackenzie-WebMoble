@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/adicionarFunko.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="../JavaScript/editarFunko.js"></script>
+    <title>Adicionar Funko</title>
+</head>
+
+<body>
+    <main>
+        <div id='formulario'>
+            <div class='inputAdicionar'>
+                <input type="text" name="img" placeholder="Digite a url da Foto">
+            </div>
+            <div class='inputAdicionar'>
+                <input type="text" name="name" placeholder="Digite o Nome">
+            </div>
+            <div class='inputAdicionar'>
+                <input type="text" name="colecao" placeholder="Digite a Coleção">
+            </div>
+            <div class='inputAdicionar'>
+                <input type="text" name="tipo" placeholder="Digite o Tipo">
+            </div>
+            <div class='inputAdicionar'>
+                <input type="text" name="preco" placeholder="Digite o Preço">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <button onclick="updateFunko()">Salvar</button>
+        <button onclick="excluirFunko()">Excluir</button>
+        <button onclick="voltar()">Voltar</button>
+    </footer>
+</body>
+
+</html>

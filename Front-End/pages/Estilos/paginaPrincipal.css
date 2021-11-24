@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #101010;
+}
+
+/* ---------------------------------------------------------------------- */
+
+header{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#Avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+
+}
+
+#fotoAvatar{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+}
+
+input{
+    width: calc(100% - 11px);
+    height: 30px;
+    background-color: #101010;
+    border-image-source: linear-gradient(to right ,#BF600D 0% ,#FACA41 65%);
+    border-width: 4pt;
+    border-image-slice: 1;
+
+    font-family: 'Roboto',sans-serif;
+    font-size: 25px;
+    color: #C4C4C4;
+
+    outline: none;
+}
+
+input::placeholder{
+    color: #C4C4C4;
+}
+
+/* ---------------------------------------------------------------------- */
+
+main{
+
+    font-family: 'Roboto',sans-serif;
+    font-size: 10px;
+    color: #C4C4C4;
+
+    padding: 0px 20px 0px 20px;
+    height: 80vh;
+}
+
+#funkos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+#empty{
+    height: calc(100vh - 150px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.funkoSection{
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    cursor: pointer;
+}
+
+.funkoDiv{
+    width: 215px;
+    height: 155px;
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+img{
+    width: 200px;
+    height: 140px;
+}
+
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    color:#C46810;
+}

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #101010;
+}
+
+/* ---------------------------------------------------------------------- */
+
+#logar{
+    width: 150px;
+    height: 40px;
+    margin-top: 2rem;
+    
+    color: #000000;
+
+    font-weight: bold;
+
+    border: 0.5px solid #FACA41;
+    border-radius: 10px;
+
+    background: linear-gradient(to right ,#FACA41 25% ,#BF600D 100%);
+    
+    cursor: pointer;
+}
+
+#logar:hover{
+    background-image: linear-gradient(to right ,#BF600D 0% ,#FACA41 65%);
+}
+
+/* ---------------------------------------------------------------------- */
+
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span, form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div{
+    width: 510px;
+    height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+input{
+    width: 500px;
+    height: 30px;
+
+    border: none;
+    border-radius: 20px;
+    background-color: #101010;
+    outline: none;
+
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+
+    text-align: center;
+    color: #6C6A6A;
+    
+}
+
+input::placeholder{
+    color: #6C6A6A;
+}
+
+a{
+    text-decoration: none;
+    color: #C46810;
+
+    font-family: 'Roboto',sans-serif;
+    font-size: small;
+}
+
+h2{
+    margin-top: 1em;
+    color: red;
+    font-size: 15px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+
+    margin-left: 1em;
+
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+    outline: none;
+
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+
+    text-align: center;
+    color: #000000;
+
+    cursor: pointer;
+}

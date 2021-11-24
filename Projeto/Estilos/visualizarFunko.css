@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #101010;
+}
+
+/* ---------------------------------------------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 1rem;
+    padding: 0px 40px;
+}
+
+button{
+    background-size: 200% auto;
+    background-image: linear-gradient(to right ,#FACA41 25% ,#BF600D 50%);
+    
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+
+    width: 150px;
+    height: 40px;
+
+    border: 1.5px solid #FACA41;
+    border-radius: 10px;
+
+    margin-left: 1rem;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-image: linear-gradient(to right ,#BF600D 0% ,#FACA41 25%);
+}
+
+#Avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+#fotoAvatar{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+main{
+    height: 70vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+
+#fotoDiv{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#foto{
+    width: 500px;
+    height: 40vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+
+    margin-left: 50px;
+}
+
+#funkoPrincipal{
+    width: 96%;
+    height: 38vh;
+}
+
+#infos{
+    width: 77%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 50px;
+}
+
+h1{
+    font-family: 'Roboto',sans-serif;
+    font-size: large;
+    color: #FACA41;
+    margin-top: 0.2rem;
+}
+/* ---------------------------------------------------------------------- */
+
+#formulario{
+    width: 50%;
+    height: 70vh;
+}
+
+#formulario h1{
+
+    margin-left: 1.4rem;
+}
+
+#outrosFunkos{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    margin-top: 1.4rem;
+}
+
+.funkoSection{
+    width: 250px;
+    height: 170px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    
+}
+
+.funkoDiv{
+    width: 215px;
+    height: 155px;
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+img{
+    width: 200px;
+    height: 140px;
+}
+
+@media only screen and (max-width: 1090px) {
+
+    header{
+        padding: 0px;
+        margin-bottom: 1rem;
+    }
+
+    #Avatar{
+        margin-right: 0.5rem;
+    }
+
+    /* ---------------------------------------------------------------------- */
+    
+    main{
+        display:block;
+    }
+
+    #fotoDiv{
+        width: 100%;
+        height: 350px;
+    }
+
+    #foto{
+        width: 300px;
+        height: 190px;
+    }
+
+    #funkoPrincipal{
+        height: 175px;
+    }
+
+    #foto, #infos, #formulario h1{
+        margin-left: 10px;
+    }
+
+    #formulario{
+        width: 100%;
+    }
+
+}

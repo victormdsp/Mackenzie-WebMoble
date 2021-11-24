@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #101010;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.enter{
+    background-size: 200% auto;
+    background-image: linear-gradient(to right ,#FACA41 25% ,#BF600D 50%);
+    
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+
+    width: 150px;
+    height: 40px;
+
+    border: 1.5px solid #FACA41;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.enter:hover{
+    background-image: linear-gradient(to right ,#BF600D 0% ,#FACA41 25%);
+}
+
+/* ---------------------------------------------------------------------- */
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+div{
+    padding: 20px 0px 20px 0px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height: 65vh;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}

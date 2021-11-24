@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #101010;
+}
+
+/* ---------------------------------------------------------------------- */
+
+header{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#Avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+#fotoAvatar{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+main{
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+#foto{
+    width: 410px;
+    height: 40vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+}
+
+img{
+    width: 96%;
+    height: 38vh;
+}
+
+#formulario{
+    width: 50%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputAdicionar{
+    width: 350px;
+    height: 45px;
+
+    border-radius: 20px;
+    background: linear-gradient(to right ,#C46810 0%,#FACA41 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1.35rem;
+    margin-bottom: 1.35rem;
+}
+
+input{
+    width: 340px;
+    height: 35px;
+
+    border: none;
+    border-radius: 20px;
+    background-color: #101010;
+    outline: none;
+
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+
+    text-align: center;
+    color: #6C6A6A;
+}
+
+/* ---------------------------------------------------------------------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    background-size: 200% auto;
+    background-image: linear-gradient(to right ,#FACA41 25% ,#BF600D 50%);
+    
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+
+    width: 150px;
+    height: 40px;
+
+    border: 1.5px solid #FACA41;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    margin-bottom: 2rem;
+}
+
+button:hover{
+    background-image: linear-gradient(to right ,#BF600D 0% ,#FACA41 25%);
+}

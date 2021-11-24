@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/adicionarFunko.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src='../JavaScript/adicionar.js'></script>
+    <title>Adicionar Funko</title>
+</head>
+<body>
+    <header>
+        <!-- <div id='Avatar'>
+            <img src="../Fotos/AvatrFundo.png" alt="Foto Avatar" id='fotoAvatar'>
+        </div> -->
+    </header>
+
+    <main>
+        <div id='formulario'>
+            <div class='inputAdicionar'>
+                <input id="imagem" type="text" name="imagem" placeholder="Digite a url da imagem">
+            </div>
+            <div class='inputAdicionar'>
+                <input id="nome" type="text" name="nome" placeholder="Digite o Nome">
+            </div>
+            <div class='inputAdicionar'>
+                <input id="colecao" type="text" name="colecao" placeholder="Digite a Coleção">
+            </div>
+            <div class='inputAdicionar'>
+                <input id="tipo" type="text" name="tipo" placeholder="Digite o Tipo">
+            </div>
+            <div class='inputAdicionar'>
+                <input id="preco" type="text" name="preco" placeholder="Digite o Preço">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <button onclick="adicionarFunko()">Adicionar</button>
+        <button onclick="voltar()">Voltar</button>
+    </footer>
+</body>
+</html>
